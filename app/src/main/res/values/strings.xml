@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WeatherAppSimple</string>
+    <string name="loading">Loading...</string>
+    <string name="noneFound">No Results Found</string>
+    <string name="noNetwork">No Network</string>
+    <string name="detailCity">City: </string>
+    <string name="detailRegion">Region: </string>
+    <string name="detailTempC">Temp C: </string>
+    <string name="detailTempF">Temp F: </string>
+    <string name="detailDay">Day</string>
+    <string name="detailNight">Night</string>
+    <string name="detailSky">Sky: </string>
+    <string name="detailWind">Wind (mph): </string>
+    <string name="detailHum">Humidity: </string>
+    <string name="detailFeelC">Feels Like(c): </string>
+    <string name="detailFeelF">Feels Like(f): </string>
+    <string name="tvCity">City:</string>
+    <string name="editCityHint">City Name</string>
+    <string name="get_weather">Get Weather</string>
+</resources>

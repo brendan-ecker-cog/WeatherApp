@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación del tiempo</string>
+    <string name="loading">Cargando...</string>
+    <string name="noneFound">No se han encontrado resultados</string>
+    <string name="noNetwork">Sin red</string>
+    <string name="detailCity">Ciudad: </string>
+    <string name="detailRegion">Región: </string>
+    <string name="detailTempC">Temperatura C: </string>
+    <string name="detailTempF">Temperatura F: </string>
+    <string name="detailDay">Día</string>
+    <string name="detailNight">Noche</string>DayWind
+    <string name="detailSky">Cielo: </string>
+    <string name="detailWind">Viento (mph): </string>
+    <string name="detailHum">Humedad: </string>
+    <string name="detailFeelC">Se siente como(c): </string>
+    <string name="detailFeelF">Se siente como(f): </string>
+    <string name="tvCity">Ciudad:</string>
+    <string name="editCityHint">Nombre de la ciudad</string>
+    <string name="get_weather">Obtener el clima</string>
+</resources>
