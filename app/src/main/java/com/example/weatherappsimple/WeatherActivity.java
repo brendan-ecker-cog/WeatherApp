@@ -40,7 +40,7 @@ public class WeatherActivity extends AppCompatActivity {
             public void run() {
                 city[0] = mDb.weatherDao().loadCityByName(name);
                 //Puts the data into the view.
-                //Log.i(TAG, city[0].name);
+                Log.i(TAG, "specific city -> recView");
                 String[] info = city[0].getArray();
 
                 ViewAdapter adapter = new ViewAdapter(info);

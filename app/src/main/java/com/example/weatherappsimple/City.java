@@ -104,7 +104,7 @@ public class City {
         ret[3] = "Temp(F): " + tempF;
         ret[4] = "Sky: " + sky;
         ret[5] = "Wind(MPH): " + windMPH;
-        ret[6] = "HumidityL " + humidity;
+        ret[6] = "Humidity: " + humidity;
         ret[7] = "Feels Like(C): " + feelLikeC;
         ret[8] = "Feels Like(F): " + feelLikeF;
         return ret;

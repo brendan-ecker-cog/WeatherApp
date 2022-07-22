@@ -1,10 +1,12 @@
 package com.example.weatherappsimple;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.List;
 public class CityActivity extends AppCompatActivity {
     private RecyclerView recView;
     private WeatherDatabase mDb;
+    private static final String TAG = CityActivity.class.getSimpleName();
 
     /**
      * This method runs when this activity is started.
@@ -25,7 +28,8 @@ public class CityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city);
         recView = findViewById(R.id.recView);
-        recView.setLayoutManager(new LinearLayoutManager(this));
+        int gridCount = getResources().getInteger(R.integer.grid_column_count);
+        recView.setLayoutManager(new GridLayoutManager(this, gridCount));
 
         //Get Database
         mDb = WeatherDatabase.getInstance(this);
@@ -39,6 +43,7 @@ public class CityActivity extends AppCompatActivity {
                     //Set the UI with the data
                     @Override
                     public void run() {
+                        Log.i(TAG, "City -> City View");
                         CityAdapter adapter = new CityAdapter(cities);
                         recView.setAdapter(adapter);
                     }
