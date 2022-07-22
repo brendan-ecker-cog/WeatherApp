@@ -17,6 +17,9 @@
         android:theme="@style/Theme.WeatherAppSimple"
         tools:targetApi="31">
         <activity
+            android:name=".CityActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity
